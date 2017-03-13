@@ -8,6 +8,8 @@ package db;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -32,7 +34,37 @@ public class SQLUtils {
             rs = ps.executeQuery();
             
             while (rs.next()) {
-                result = "ID: "+rs.getInt(1) + " STRING: "+rs.getString(2)+"\n";
+                result += "ID: "+rs.getInt(1) + " STRING: "+rs.getString(2)+"\n";
+            }
+            
+        } catch(Exception e) {e.printStackTrace();}
+        finally {
+            if (con != null) { try {con.close();}catch(Exception e){}}
+            if (ps != null) { try {ps.close();}catch(Exception e){}}
+            if (rs != null) { try {rs.close();}catch(Exception e){}}
+        }
+        
+        
+        return result;
+    }
+    
+    public static List<String> test2() {
+        
+        java.sql.Connection con = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        List<String> result = new ArrayList<String>();
+        
+        try {
+            con = getConnection();
+            
+            String query = "SELECT * FROM "+Secret.TEST_TABLE;
+            
+            ps = con.prepareCall(query);
+            rs = ps.executeQuery();
+            
+            while (rs.next()) {
+                result.add("ID: "+rs.getInt(1) + " STRING: "+rs.getString(2));
             }
             
         } catch(Exception e) {e.printStackTrace();}

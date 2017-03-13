@@ -1,0 +1,188 @@
+html {
+    background: white;
+    font-family: helvetica;
+    height: 100%;
+}
+
+body {
+    margin:0;
+    height: 100%;
+}
+
+#title {
+    text-align: center;
+    color: white;
+    font-size: 75pt;
+    background: rgb(181,189,200); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(181,189,200,1) 0%, rgba(130,140,149,1) 36%, rgba(40,52,59,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    height: 150px;
+    margin: 0;
+}
+
+#content {
+    min-height: 100%;
+    
+}
+
+#main {
+    overflow: auto;
+    padding-bottom: 70px;
+}
+
+fieldset {
+    background: lightgray;
+    margin-top: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+fieldset legend {
+    font-weight: bold;
+}
+
+#debug {
+    margin: 0;
+    height: 15px;
+    margin-top: 0px;
+    border-left: 0;
+    border-right: 0;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.label {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+#info {
+    width: 60%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+}
+
+#infoTable1 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#infoTable1 td {
+    padding: 5px;
+}
+
+#tooltip {
+    color: grey;
+    text-shadow: 1px 1px 0.01px rgba(255,255,255,1);
+    cursor: help;
+}
+    
+#infoTable2 {
+    width:40%;
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+#infoTable2 td {
+    min-width: 40px;
+}
+
+#graphs {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+#outsideCharts {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid gray;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #262626;
+}
+
+#graphs1 {
+    display: block;
+    height: 300px;
+}
+
+#graphs1-1Container {
+    float: left;
+    width: 70%;
+    height: 300px;
+}
+
+#graphs1-1 {
+    height: 300px;
+}
+
+#graphs1-2Container {
+    float: left;
+    width: 30%;
+    height: 300px;
+}
+
+#graphs1-2 {
+    height: 300px;
+}
+
+#graphs2 {
+    display: block;
+    height: 320px;
+}
+
+#graphs2-1Container {
+    float: left;
+    width: 70%;
+    height: 320px;
+}
+
+#graphs2-1 {
+    height: 300px;
+}
+
+#graphs2-2Container {
+    float: left;
+    width: 30%;
+    height: 320px;
+}
+
+#graphs2-2 {
+    height: 320px;
+}
+
+.ui-rangeSlider-label {
+    z-index: 10;
+}
+
+#footer {
+    text-align: center;
+    position:relative;
+    width:100%;
+    margin-top:-70px;
+    height:70px;
+    bottom:0;
+    color: grey;
+}
+
+#footer hr {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#footer p {
+    margin:0;
+}

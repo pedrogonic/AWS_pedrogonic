@@ -1,0 +1,12 @@
+<%@ page pageEncoding="UTF-8" %>
+    <script src="<%=request.getContextPath()%>/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+    <script src="<%=request.getContextPath()%>/js/commons.js" type="text/javascript"></script>    
+
+    <script>
+        var lang = '${lang}';
+        var requestURI = '<%=request.getRequestURI()%>';
+    </script>
+        
+    <input type="radio" name="lang" id="lang_en_US" value="en_US" onclick="changeLocale('us')">US</input>
+    <input type="radio" name="lang" id="lang_pt_BR" value="pt_BR" onclick="changeLocale('br')">BR</input>
+    <br/>

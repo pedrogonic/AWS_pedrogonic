@@ -5,6 +5,8 @@
  */
 package test;
 
+import java.util.List;
+
 /**
  *
  * @author pedrogonic
@@ -12,9 +14,17 @@ package test;
 public class TestClass {
     
     public static void main(String[] args) {
+        /** Test running class */
         //System.out.println("Hello World!"); // Display the string.
         
-        System.out.println(db.SQLUtils.test());
+        /** Test accessing remote DB */
+        //System.out.println(db.SQLUtils.test());
+        
+        /** Testing for jstl loop */
+        List<String> list = db.SQLUtils.test2();
+        list.stream().forEach((s) -> {
+            System.out.println(s);
+        });
         
     }
     
