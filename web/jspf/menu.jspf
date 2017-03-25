@@ -25,7 +25,7 @@
             
             <ul>
                 
-                <li>
+                <li class="link">
                     <a href="<%=request.getContextPath()%>/index.jsp">
                         <fmt:message bundle="${text}" key="nav.about"/>
                     </a>
@@ -51,4 +51,10 @@
         function showHideNav() {
             $("#nav").slideToggle();
         }
+        
+        $(".link").click(function() {
+            console.log('i');
+            window.location = $(this).find("a").attr("href"); 
+            return false;
+        });
     </script>

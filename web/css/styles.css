@@ -83,18 +83,33 @@ body {
     top: 44px;
         background-color: rgba(0,0,0,0.8);
     color: white;
-    padding: 5px;
 }
 
 #nav h1 {
     padding: 1px;
     margin: 1px;
     min-width: 150px;
+    padding: 5px;
 }
 
 #nav ul {
     margin: 1px;
     list-style-type: none;
+    -webkit-padding-start: 0px;
+}
+
+.link {
+    cursor: pointer;
+}
+
+#nav ul li {
+    -webkit-padding-start: 0px;
+    padding: 5px;
+    padding-left: 20px;
+}
+
+#nav ul li:hover {
+    background-color: rgba(0,0,0,1);
 }
 
 #nav a {
