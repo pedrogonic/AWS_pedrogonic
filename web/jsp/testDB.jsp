@@ -1,3 +1,6 @@
+<%@page import="db.SQLUtils"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="java.util.List"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
@@ -12,7 +15,18 @@
     </head>
     <body>        
         <%@include file="/jspf/header.jspf"%>
+        <section id="content">
+            <section id="main">
         
-        <a href="../index.jsp">Index</a>
+                <%
+                    List<String> list = SQLUtils.test2();
+                    for (String s : list) {%>
+                        <p><%=s%></p>
+                    <%}
+                %>
+        
+            </section>
+        </section>
+        <%@include file="/jspf/footer.jspf"%>
     </body>
 </html>

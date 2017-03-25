@@ -24,14 +24,7 @@
 
 
 
-                <a href="jsp/second.jsp">page 2</a>
-                <%
-                    //List<String> list = SQLUtils.test2();
-                    List<String> list = new ArrayList<String>();
-                    for (String s : list) {%>
-                        <p><%=s%></p>
-                    <%}
-                %>
+                <a href="jsp/testDB.jsp">page 2</a>
 
                 <article id="ipsum">
                     <fmt:message bundle="${text}" key="ipsum"/>

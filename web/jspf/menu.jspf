@@ -1,16 +1,44 @@
     <section id="menu">
         
-        <article id="nav-article">
-            <img id="nav-button" src="<%=request.getContextPath()%>/img/menu_white.png" alt=""/>
+        <article id="nav-button-article">
+            <img id="nav-button" src="<%=request.getContextPath()%>/img/menu_white.png" alt="" onclick="showHideNav();"/>
         </article>
         
         <article id="lang">
+            
             <input type="radio" name="lang" id="lang_en_US" value="en_US" onclick="changeLocale('us')">
                 <img id="US_flag" src="<%=request.getContextPath()%>/img/US.png" alt=""/>
             </input>
+            
             <input type="radio" name="lang" id="lang_pt_BR" value="pt_BR" onclick="changeLocale('br')">
                 <img id="BR_flag" src="<%=request.getContextPath()%>/img/BR.png" alt=""/>
             </input>
         
         </article>
+            
     </section>
+            
+    <section id="nav">
+        <nav>
+            
+            <h1><fmt:message bundle="${text}" key="nav.title"/></h1>
+            
+            <ul>
+                
+                <li>
+                    <a href="<%=request.getContextPath()%>/index.jsp">
+                        <fmt:message bundle="${text}" key="nav.about"/>
+                    </a>
+                </li>
+                
+            </ul>
+                    
+       </nav>
+                    
+    </section>
+                    
+    <script>
+        function showHideNav() {
+            $("#nav").slideToggle();
+        }
+    </script>
