@@ -25,7 +25,7 @@
             
             <ul>
                 
-                <li class="link">
+                <li class="menuLink">
                     <a href="<%=request.getContextPath()%>/index.jsp">
                         <fmt:message bundle="${text}" key="nav.about"/>
                     </a>

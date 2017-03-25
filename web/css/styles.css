@@ -21,15 +21,27 @@ body {
     margin: 0;
 }
 
-#content {
+.content {
+    display: grid;
     min-height: 100%;
-    
+    grid-template-columns: [sidebar] 20% [main] 80%;
+    grid-template-rows: [header] 30px [main] auto [footer] 20px;
 }
 
-#main {
+.main {
+    overflow: auto;
+    padding: 20px;
+    grid-column-start: main;
+    grid-row-start: main;
+}
+
+.sidebar {
     overflow: auto;
     padding-top: 30px;
     padding-bottom: 20px;
+    padding-left: 20px;
+    grid-column-start: sidebar;
+    grid-row-start: main;
 }
 
 /**
@@ -98,7 +110,7 @@ body {
     -webkit-padding-start: 0px;
 }
 
-.link {
+.menuLink {
     cursor: pointer;
 }
 
@@ -161,13 +173,54 @@ body {
     margin-left: 50px;
 }
 
-/**
- *   Old
+/** 
+ *  Content
  */
+
+.name {
+    margin-bottom: 0px;
+}
+
+.nick {
+    margin-top: 0px;
+    color: rgba(143, 143, 143, 1);
+}
+
+.more ul {
+    list-style-type: none;
+    -webkit-padding-start: 0px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.more ul li {
+    -webkit-padding-start: 0px;
+    padding: 5px;
+    padding-left: 20px;
+}
+
+.more img {
+    width: 30px;
+}
+
+.more a {
+    color: black;
+    vertical-align: super;
+}
+
+.more a:hover {
+    color: purple;
+}
+
 
 #ipsum {
     //width: 100px;
 }
+
+/**
+ *   Old
+ */
 
 fieldset {
     background: lightgray;

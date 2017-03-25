@@ -18,20 +18,80 @@
     </head>
     <body>
         <%@include file="/jspf/header.jspf"%>
-        <section id="content">
-            <section id="main">
-                <h1>Test</h1>
+        <section class="content">
+            
+            <section class="sidebar">
+                
+                <img src="<%=request.getContextPath()%>/img/Formal_Pequena.jpg" alt=""/>
+                
+                <article class="nameHolder">
+                    <h1 class="name">Pedro Goñi Coelho</h1>
+                    <p class="nick">(pedrogonic)</p>
+                </article>
 
+                <article class="more">
+                    
+                    <h1 class="name"><fmt:message bundle="${text}" key="about.more"/></h1>
+                    
+                    <ul>
 
-        
+                        <li class="">
+                            <img src="<%=request.getContextPath()%>/img/email.png" alt=""/>
+                            <a href="mailto:pedrogonic@gmail.com?Subject=pedrogonic.com" target="_top">
+                                pedrogonic@gmail.com
+                            </a>
+                        </li>
+                        
+                        <li class="">
+                            <img src="<%=request.getContextPath()%>/img/linkedin.gif" alt=""/>
+                            <a href="https://www.linkedin.com/in/pedro-coelho-8379514b" target="_blank">
+                                Linkedin
+                            </a>
+                        </li>
 
-                <a href="jsp/testDB.jsp">page 2</a>
+                        <li class="">
+                            <img src="<%=request.getContextPath()%>/img/github.png" alt=""/>
+                            <a href="https://github.com/pedrogonic" target="_blank">
+                                Github
+                            </a>
+                        </li>
+                        
+                        <li class="">
+                            <img src="<%=request.getContextPath()%>/img/facebook.png" alt=""/>
+                            <a href="https://www.facebook.com/pedrogonic" target="_blank">
+                                Facebook
+                            </a>
+                        </li>
+                        
+                        <li class="">
+                            <img src="<%=request.getContextPath()%>/img/steam.png" alt=""/>
+                            <a href="http://steamcommunity.com/id/pedrogonic/" target="_blank">
+                                Steam
+                            </a>
+                        </li>
+                        
+                        <li class="">
+                            <img src="<%=request.getContextPath()%>/img/instagram.png" alt=""/>
+                            <a href="https://www.instagram.com/pedrogonic/" target="_blank">
+                                Instagram
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+
+            </section>
+            
+            <section class="main">
+                <h1><fmt:message bundle="${text}" key="about.me"/></h1>
+                
+                <h4 class="nick"><fmt:message bundle="${text}" key="about.construction"/></h4>
 
                 <article id="ipsum">
                     <fmt:message bundle="${text}" key="ipsum"/>
                 </article>
 
             </section>
+                
         </section>
         <%@include file="/jspf/footer.jspf"%>
     </body>
