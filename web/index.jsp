@@ -14,7 +14,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title><fmt:message bundle="${text}" key="page.title"/></title>
-        
+        <link rel="shortcut icon" href="<%=request.getContextPath()%>/img/earth.ico" />
     </head>
     <body>
         <%@include file="/jspf/header.jspf"%>
@@ -23,6 +23,7 @@
                 <h1>Test</h1>
 
 
+        
 
                 <a href="jsp/testDB.jsp">page 2</a>
 
