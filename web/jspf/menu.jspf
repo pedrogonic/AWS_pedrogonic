@@ -1,0 +1,16 @@
+    <section id="menu">
+        
+        <article id="nav-article">
+            <img id="nav-button" src="<%=request.getContextPath()%>/img/menu_white.png" alt=""/>
+        </article>
+        
+        <article id="lang">
+            <input type="radio" name="lang" id="lang_en_US" value="en_US" onclick="changeLocale('us')">
+                <img id="US_flag" src="<%=request.getContextPath()%>/img/US.png" alt=""/>
+            </input>
+            <input type="radio" name="lang" id="lang_pt_BR" value="pt_BR" onclick="changeLocale('br')">
+                <img id="BR_flag" src="<%=request.getContextPath()%>/img/BR.png" alt=""/>
+            </input>
+        
+        </article>
+    </section>

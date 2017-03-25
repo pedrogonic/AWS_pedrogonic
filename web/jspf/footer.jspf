@@ -1,0 +1,7 @@
+    <section id="footer">
+        
+        <article id="developed">
+            <fmt:message bundle="${text}" key="footer.developed"/>
+        </article>
+        
+    </section>

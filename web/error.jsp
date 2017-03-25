@@ -14,31 +14,12 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title><fmt:message bundle="${text}" key="page.title"/></title>
-        
+        <link rel="shortcut icon" href="<%=request.getContextPath()%>/img/error.ico" />
+        <link href="<%=request.getContextPath()%>/css/styles.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <%@include file="/jspf/header.jspf"%>
-        <section id="content">
-            <section id="main">
-                <h1>Test</h1>
-
-
-
-                <a href="jsp/second.jsp">page 2</a>
-                <%
-                    //List<String> list = SQLUtils.test2();
-                    List<String> list = new ArrayList<String>();
-                    for (String s : list) {%>
-                        <p><%=s%></p>
-                    <%}
-                %>
-
-                <article id="ipsum">
-                    <fmt:message bundle="${text}" key="ipsum"/>
-                </article>
-
-            </section>
-        </section>
-        <%@include file="/jspf/footer.jspf"%>
+        <img id="error_page_img" src="<%=request.getContextPath()%>/img/error.png" alt=""/>
+        <h1 id="error_title"><fmt:message bundle="${text}" key="error.title"/></h1>
+        <p id="error_instructions"><fmt:message bundle="${text}" key="error.instructions"/></p>
     </body>
 </html>
