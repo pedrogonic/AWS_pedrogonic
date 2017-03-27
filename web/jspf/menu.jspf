@@ -52,8 +52,7 @@
             $("#nav").slideToggle();
         }
         
-        $(".link").click(function() {
-            console.log('i');
+        $(".menuLink").click(function() {
             window.location = $(this).find("a").attr("href"); 
             return false;
         });
